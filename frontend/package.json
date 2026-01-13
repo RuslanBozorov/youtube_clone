@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/RuslanBozorov/youtube_project.git"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+  "url": "https://github.com/RuslanBozorov/youtube_project/issues"
+},
+  "homepage": "https://github.com/RuslanBozorov/youtube_project#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
