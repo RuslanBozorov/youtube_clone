@@ -4,10 +4,13 @@ import fileUpload from 'express-fileupload'
 import indexRouter from './routers/index.js'
 import fs from 'fs'
 import { join } from 'path'
+import cors from 'cors'
 
 config()
 
 const app = express()
+app.use(cors())
+app.use(express.static(join(process.cwd(),'src','uploads')))
 app.use(fileUpload())
 app.use(express.json())
 app.use(indexRouter.userRouter)

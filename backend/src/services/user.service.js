@@ -1,6 +1,6 @@
 import pool from '../database/config.js'
 import { comparePassword, hashPassword } from '../utils/bcrypt.js';
-import { ConflictError, InternalServerError, NotFoundError } from '../utils/errors.js';
+import { BadRequestError, ConflictError, InternalServerError, NotFoundError } from '../utils/errors.js';
 import {join,extname} from 'path'
 import Jwt from 'jsonwebtoken'
 class UserService{
@@ -10,9 +10,14 @@ class UserService{
             const {username,password} = body
         const {file} = files
 
-        let fileName = new Date().getTime() + extname(file.name) ;
+        const fileName = new Date().getTime() + extname(file.name) ;
         
+        const existFile = [".png",".jpg","jpeg",".svg"]
         
+        if(!existFile.includes(extname(file.name))){
+            throw new BadRequestError("file mos kelmadi",400)
+        }
+
         const existName = await pool.query("select * from users where username = $1",[username])
 
         if(existName.rowCount){

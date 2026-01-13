@@ -6,7 +6,11 @@ const router = Router()
 
 
 router
-    .get("/api/files/oneUser",checkToken,fileController.getAllFiles)
+    .get("/api/files/oneUser",checkToken,fileController.getUserFiles)
+    .get("/api/files/all",fileController.getAllFiles)
+    .get("/file/:file_name",fileController.getFile)
+    .get("/file/download/:file_name",fileController.downloadFile)
+
     .post("/api/files",validation.createFile,fileController.createFile)
     .put("/api/files/:fileId",checkToken,validation.fileUpdateSchema,fileController.fileUpdateSchema)
     .delete("/api/files/:fileId",checkToken,fileController.deleteFile)

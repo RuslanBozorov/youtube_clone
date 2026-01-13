@@ -1,0 +1,97 @@
+
+
+[Tue Jan 13 2026 20:51:11 GMT+0500 (Узбекистан, стандартное время)--GET--/file/1768310128419.jpg--file is not defined] ReferenceError: file is not defined
+    at FileService.getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/services/files.service.js:76:49)
+    at getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/controllers/files.controller.js:37:38)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:295:15
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:600:14)
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:610:14)
+
+[Tue Jan 13 2026 20:51:34 GMT+0500 (Узбекистан, стандартное время)--GET--/file/1768310128419.jpg--file is not defined] ReferenceError: file is not defined
+    at FileService.getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/services/files.service.js:76:49)
+    at getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/controllers/files.controller.js:37:38)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:295:15
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:600:14)
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:610:14)
+
+[Tue Jan 13 2026 20:52:45 GMT+0500 (Узбекистан, стандартное время)--GET--/file/1768310128419.jpg--file is not defined] ReferenceError: file is not defined
+    at FileService.getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/services/files.service.js:76:49)
+    at getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/controllers/files.controller.js:37:38)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:295:15
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:600:14)
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:610:14)
+
+[Tue Jan 13 2026 20:53:11 GMT+0500 (Узбекистан, стандартное время)--GET--/file/1768310128419.jpg--Cannot destructure property 'file' of 'req.name' as it is undefined.] TypeError: Cannot destructure property 'file' of 'req.name' as it is undefined.
+    at FileService.getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/services/files.service.js:57:12)
+    at getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/controllers/files.controller.js:37:38)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:295:15
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:600:14)
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:610:14)
+
+[Tue Jan 13 2026 20:53:21 GMT+0500 (Узбекистан, стандартное время)--GET--/file/1768310128419.jpg--Cannot destructure property 'file' of 'req.name' as it is undefined.] TypeError: Cannot destructure property 'file' of 'req.name' as it is undefined.
+    at FileService.getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/services/files.service.js:57:12)
+    at getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/controllers/files.controller.js:37:38)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:295:15
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:600:14)
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:610:14)
+
+[Tue Jan 13 2026 20:53:52 GMT+0500 (Узбекистан, стандартное время)--GET--/file/1768310128419.jpg--Cannot read properties of undefined (reading 'name')] TypeError: Cannot read properties of undefined (reading 'name')
+    at FileService.getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/services/files.service.js:79:54)
+    at getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/controllers/files.controller.js:37:38)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:295:15
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:600:14)
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:610:14)
+
+[Tue Jan 13 2026 20:54:06 GMT+0500 (Узбекистан, стандартное время)--GET--/file/1768310128419.jpg--Cannot destructure property 'file' of 'req.body' as it is undefined.] TypeError: Cannot destructure property 'file' of 'req.body' as it is undefined.
+    at FileService.getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/services/files.service.js:57:12)
+    at getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/controllers/files.controller.js:37:38)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:295:15
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:600:14)
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:610:14)
+
+[Tue Jan 13 2026 20:54:52 GMT+0500 (Узбекистан, стандартное время)--GET--/file/1768310128419.jpg--Cannot destructure property 'file' of 'req.params.file' as it is undefined.] TypeError: Cannot destructure property 'file' of 'req.params.file' as it is undefined.
+    at FileService.getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/services/files.service.js:57:12)
+    at getFile (file:///D:/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/controllers/files.controller.js:37:38)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:295:15
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:600:14)
+    at param (D:\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\router\index.js:610:14)

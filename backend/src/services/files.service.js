@@ -1,4 +1,5 @@
 import pool from "../database/config.js";
+import { config } from "dotenv";
 import {
   BadRequestError,
   InternalServerError,
@@ -6,9 +7,9 @@ import {
 } from "../utils/errors.js";
 import { extname, join } from "path";
 import fs from "fs";
-import { log } from "console";
+config()
 class FileService {
-  async getAllFiles(userId, next) {
+  async getUserFiles(userId, next) {
     try {
       let files = await pool.query("select * from files where user_id=$1", [
         userId,
@@ -31,6 +32,63 @@ class FileService {
       next(error);
     }
   }
+
+
+  async getAllFiles(req){
+      const {title} = req.query
+
+      let files
+      
+      if(!title){
+        files = await pool.query("select files.id, files.title, files.size, files.created_at, files.file_name, json_build_object('id',users.id, 'name', users.username,'avatar', users.avatar) as users from files inner join users on users.id = files.user_id ")
+      }else{
+        files = await pool.query(`select files.id, files.title, files.size, files.created_at, files.file_name, json_build_object('id',users.id, 'name', users.username,'avatar', users.avatar) as users from files  inner join users on users.id = files.user_id where title ilike '%${title}%' `)
+      }
+
+      return{
+        status:200,
+        files:files.rows
+      }       
+      }
+
+
+
+
+  async getFile(req){
+    const {file_name} = req.params
+    
+
+    const existFile = [
+        ".mp4",
+        ".webm",
+        ".mpeg",
+        ".avi",
+        ".mkv",
+        ".m4v",
+        ".ogm",
+        ".mov",
+        ".mpg",
+      ];
+
+      const existFileAvatar = [".png",".jpg",".jpeg",".svg"]
+        
+
+      let filePath
+      if(existFile.includes(extname(file_name))){
+          filePath  = join(process.cwd(),'src','uploads','videos',file_name)
+      }else if(existFileAvatar.includes(extname(file_name))){
+        
+          filePath  = join(process.cwd(),'src','uploads','pictures',file_name)
+      }else{
+
+       throw new NotFoundError("file name topilmadi",404)
+      }
+
+      return {
+        status:200,
+        filePath
+      }
+  }   
 
   async createFile(req, next) {
     try {
@@ -72,11 +130,7 @@ class FileService {
         }
       );
 
-      if (file.size / 1024 / 1024 < 1) {
-        file.size = Math.ceil(file.size / 1024 / 1024);
-      } else {
-        Math.floor(file.size / 1024 / 1024);
-      }
+      file.size = +(file.size/1024/1024).toFixed(2)
 
       await pool.query(
         "insert into files(title,file_name,size,user_id) values($1,$2,$3,$4)",
@@ -145,7 +199,30 @@ class FileService {
     };
   }
 
+
+  async downloadFile(req){
+    // ustoz shunaqa download yozib kenglar degan ekan
+  }
   
 }
 
 export default new FileService();
+
+/*
+[
+{
+
+id:1,
+title:"Salom",
+size:23,
+createdAt:"2026-01-12",
+file_name:"Ali.png"
+user:{
+id:1,
+username:"Ali",
+avatar:"2343232.png"
+}
+
+}
+]
+*/
