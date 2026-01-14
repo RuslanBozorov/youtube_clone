@@ -11,7 +11,14 @@
     <link rel="stylesheet" href="./css/material-design-iconic-font.css">
     <link rel="stylesheet" href="./css/material-design-iconic-font.min.css">
 </head>
-<body> 
+<body>
+    <script>
+      const token = window.localStorage.getItem("accessToken")
+
+      if(token){
+        window.location = "/admin"
+      }
+    </script>
     <div class="container">
         <div class="wrapper">
             <h1 class="title">Registration Page</h1>
@@ -34,13 +41,15 @@
                 <input type="submit" value="Register" id="submitButton">
             </form>
             <div style="margin-top: 20px">
-            <a style="margin-right: 25px;" href="/home" class="sign-link">home</a>
+            <a style="margin-right: 25px;" href="/" class="sign-link">home</a>
             <a href="/login" class="sign-link">I am already member</a>
         </div>
             <img src="img/signup-image.jpg" alt="signup-image" class="signup-image">
         </div>
     </div>
     <!-- <script src="/js/request.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="./js/register.js"></script>
 </body>
 </html>

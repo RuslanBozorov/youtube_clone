@@ -289,14 +289,21 @@ main.main {
     background-color: var(--iframes-bg-color);
     top: 0;
     overflow-y: scroll;
+    padding-left: 100px;
+    
 }
 .iframes-list {
     display: flex;
     flex-wrap: wrap;  
+    gap: 40px;
+    /* margin-left: 100px; */
 }
 .iframe {
     width: 26%;
     position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    border-radius: 10px;
 }
 .iframe:not(:nth-child(3n)) {
     margin-right: 2%;
@@ -367,3 +374,4 @@ main.main {
     width: 30px;
     margin-left: 3px;
 }
+

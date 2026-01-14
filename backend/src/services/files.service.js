@@ -7,92 +7,81 @@ import {
 } from "../utils/errors.js";
 import { extname, join } from "path";
 import fs from "fs";
-config()
-class FileService {
-  async getUserFiles(userId, next) {
-    try {
-      let files = await pool.query("select * from files where user_id=$1", [
-        userId,
-      ]);
-      console.log(files.rows);
+config();
+class FileService{
+  async getUserFiles(params, next) {
+    const {id} = params
+      let files = await pool.query("select f.title , f.size, f.created_at , f.file_name,json_build_object('id',u.id,'name',u.username,'avatar',u.avatar) as users from files as f inner join users as u on f.user_id = u.id  where u.id=$1", [id]);
+      // console.log(files.rows);
 
       if (!files.rowCount) {
-        return {
-          status: 200,
-          message: "User has no videos",
-          files: [],
-        };
+        throw new BadRequestError("User Not found",400)
       }
 
       return {
-        status: 200,
         files: files.rows,
       };
-    } catch (error) {
-      next(error);
-    }
   }
 
+  async getAllFiles(req) {
+  const { title } = req.query
 
-  async getAllFiles(req){
-      const {title} = req.query
+  let query = `
+    SELECT 
+      files.id, 
+      files.title, 
+      files.size, 
+      files.created_at, 
+      files.file_name,
+      json_build_object(
+        'id', users.id,
+        'name', users.username,
+        'avatar', users.avatar
+      ) AS users
+    FROM files
+    INNER JOIN users ON users.id = files.user_id
+  `
 
-      let files
-      
-      if(!title){
-        files = await pool.query("select files.id, files.title, files.size, files.created_at, files.file_name, json_build_object('id',users.id, 'name', users.username,'avatar', users.avatar) as users from files inner join users on users.id = files.user_id ")
-      }else{
-        files = await pool.query(`select files.id, files.title, files.size, files.created_at, files.file_name, json_build_object('id',users.id, 'name', users.username,'avatar', users.avatar) as users from files  inner join users on users.id = files.user_id where title ilike '%${title}%' `)
-      }
+  let values = []
 
-      return{
-        status:200,
-        files:files.rows
-      }       
-      }
+  if (title) {
+    query += ` WHERE files.title ILIKE $1`
+    values.push(`%${title}%`)
+  }
+
+  const files = await pool.query(query, values)
+
+  return {
+    status: 200,
+    files: files.rows
+  }
+}
 
 
 
+ async getFile(req) {
+  const { file_name } = req.params;
 
-  async getFile(req){
-    const {file_name} = req.params
-    
+  const existFile = [".mp4",".webm",".mpeg",".avi",".mkv",".m4v",".ogm",".mov",".mpg"];
+  const existFileAvatar = [".png",".jpg",".jpeg",".svg"];
 
-    const existFile = [
-        ".mp4",
-        ".webm",
-        ".mpeg",
-        ".avi",
-        ".mkv",
-        ".m4v",
-        ".ogm",
-        ".mov",
-        ".mpg",
-      ];
+  const ext = extname(file_name).toLowerCase();
 
-      const existFileAvatar = [".png",".jpg",".jpeg",".svg"]
-        
+  let filePath;
+  if (existFile.includes(ext)) {
+    filePath = join(process.cwd(), "src", "uploads", "videos", file_name);
+  } else if (existFileAvatar.includes(ext)) {
+    filePath = join(process.cwd(), "src", "uploads", "pictures", file_name);
+  } else {
+    throw new NotFoundError("file name topilmadi", 404);
+  }
 
-      let filePath
-      if(existFile.includes(extname(file_name))){
-          filePath  = join(process.cwd(),'src','uploads','videos',file_name)
-      }else if(existFileAvatar.includes(extname(file_name))){
-        
-          filePath  = join(process.cwd(),'src','uploads','pictures',file_name)
-      }else{
-
-       throw new NotFoundError("file name topilmadi",404)
-      }
-
-      return {
-        status:200,
-        filePath
-      }
-  }   
-
+  return { status: 200, filePath };
+}
   async createFile(req, next) {
     try {
-      const { title, userId } = req.body;
+      const { title } = req.body;
+      const userId = req.user.id  
       const { file } = req.files;
 
       const existFile = [
@@ -130,7 +119,7 @@ class FileService {
         }
       );
 
-      file.size = +(file.size/1024/1024).toFixed(2)
+      file.size = +(file.size / 1024 / 1024).toFixed(2);
 
       await pool.query(
         "insert into files(title,file_name,size,user_id) values($1,$2,$3,$4)",
@@ -147,12 +136,10 @@ class FileService {
     }
   }
 
-
-  async fileUpdate(req,next){
-    const {id} = req.user 
-    const {fileId} = req.params
-    const {title} = req.body
-
+  async fileUpdate(req, next) {
+    const { id } = req.user;
+    const { fileId } = req.params;
+    const { title } = req.body;
 
     const existFile = await pool.query(
       "select * from files where id=$1 and user_id=$2",
@@ -162,14 +149,13 @@ class FileService {
       throw new NotFoundError("Not found file of this user", 404);
     }
 
-    await pool.query("update files set title=$1 where id=$2",[title,fileId])
+    await pool.query("update files set title=$1 where id=$2", [title, fileId]);
 
     return {
-        status:201,
-        message:"File succesfully updated"
-    }
+      status: 201,
+      message: "File succesfully updated",
+    };
   }
-
 
   async deleteFile(req, next) {
     const { id } = req.user;
@@ -199,11 +185,46 @@ class FileService {
     };
   }
 
+  async download(req){
+    const { file_name } = req.params;
 
-  async downloadFile(req){
-    // ustoz shunaqa download yozib kenglar degan ekan
+    const existFile = [
+      ".mp4",
+      ".webm",
+      ".mpeg",
+      ".avi",
+      ".mkv",
+      ".m4v",
+      ".ogm",
+      ".mov",
+      ".mpg",
+    ];
+
+
+    let filePath;
+    if (existFile.includes(extname(file_name))) {
+      filePath = join(process.cwd(), "src", "uploads", "videos", file_name);
+    } else {
+      throw new NotFoundError("file name not found", 404);
+    }
+
+    return {
+      status: 200,
+      filePath,
+    };
+    
   }
+
+  async search(params){
+    const {data} = params
+     const JoinData = await pool.query("select f.title , f.size, f.created_at , f.file_name,json_build_object('id',u.id,'name',u.username,'avatar',u.avatar) as users from files as f inner join users as u on f.user_id = u.id where u.username ilike $1 or f.title ilike $2",[`%${data}%`,`%${data}%`])
+     if(JoinData.rows.length === 0){
+            throw new NotFoundError(404,`not found data about ${data}`)
+        }
+
+        return JoinData.rows 
   
+  }
 }
 
 export default new FileService();

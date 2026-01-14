@@ -19,7 +19,6 @@ class Validations{
 
     createFile = Joi.object({
         title:Joi.string().min(3).max(20).required(),
-        userId:Joi.string().required()
     }) 
 
 

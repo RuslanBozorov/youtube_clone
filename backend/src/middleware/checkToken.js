@@ -3,7 +3,8 @@ import {NotFoundError, UnauthorizedError } from "../utils/errors.js"
 import JWT from 'jsonwebtoken'
 export default async(req,res,next)=>{
   try {
-     const {token} = req.headers
+     let {authorization } = req.headers;
+     let token = authorization .split(" ")[1]
     //  console.log(token);
      
     if(!token){

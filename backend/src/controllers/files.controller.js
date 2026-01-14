@@ -14,46 +14,39 @@ class FileController {
 
   async getUserFiles(req, res, next) {
     try {
-      const data = await fileService.getUserFiles(req.user.id, next);
-      return res.status(data.status).json(data);
+      const data = await fileService.getUserFiles(req.params, next);
+      return res.status(200).json({
+        status:200,
+        files:data.files
+      });
     } catch (error) {
       next(error);
     }
   }
 
-  async getAllFiles(req, res, next) {
+async getAllFiles(req, res, next) {
+  try {
+    const data = await fileService.getAllFiles(req);
+
+    return res.status(data.status).json({
+      status: data.status,
+      files: data.files
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
+
+  async getFile(req, res, next) {
     try {
-      const data = await fileService.getAllFiles(req, next);
-      if (data) {
-        return res.status(data.status).json(data);
-      }
+      const data = await fileService.getFile(req);
+     return res.sendFile(data.filePath);
     } catch (error) {
       next(error);
     }
-  }
+  }    
 
-  async getFile(req,res,next){
-    try {
-      const data = await fileService.getFile(req)
-      if(data){
-        return res.status(data.status).sendFile(data.filePath)
-      }
-    } catch (error) {
-      next(error)
-    }
-  }
-  
-
-  async downloadFile(req,res,next){
-    try {
-      const data = await fileService.downloadFile(req)
-      if(data){
-        return res.status(data.status).sendFile(data.filePath)
-      }
-    } catch (error) {
-      next(error)
-    }
-  }
 
   async fileUpdateSchema(req, res, next) {
     try {
@@ -74,6 +67,30 @@ class FileController {
       }
     } catch (error) {
       next(error);
+    }
+  }
+
+  async download(req,res,next){
+    try {
+      const data = await fileService.download(req)
+      if(data){
+        return res.status(data.status).download(data.filePath)
+      }
+    } catch (error) {
+      next(error)
+    }
+  }
+  async search(req,res,next){
+    try {
+      const files = await fileService.search(req.params)
+      if(files){
+        return res.status(200).json({
+          status:200,
+          files
+        })
+      }
+    } catch (error) {
+      next(error)
     }
   }
 }

@@ -37,6 +37,7 @@ class UserService{
         return{
             status:201,
             message:"User success created",
+            avatar:fileName,
             accessToken:Jwt.sign({id:newUser.rows[0].id,username:newUser.rows[0].username},process.env.JWT_PASSWORD,{expiresIn:'10m'}),
             refreshToken:Jwt.sign({id:newUser.rows[0].id,username:newUser.rows[0].username},process.env.JWT_PASSWORD,{expiresIn:'1d'})
         }
@@ -64,6 +65,7 @@ class UserService{
         return{
             status:201,
             message:"User success login",
+            avatar:existUser.rows[0].avatar,
             accessToken:Jwt.sign({id:existUser.rows[0].id,username:existUser.rows[0].username},process.env.JWT_PASSWORD,{expiresIn:'10m'}),
             refreshToken:Jwt.sign({id:existUser.rows[0].id,username:existUser.rows[0].username},process.env.JWT_PASSWORD,{expiresIn:'1d'})
         }
