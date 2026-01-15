@@ -8,25 +8,44 @@ import {
 import { extname, join } from "path";
 import fs from "fs";
 config();
-class FileService{
-  async getUserFiles(params, next) {
-    const {id} = params
-      let files = await pool.query("select f.title , f.size, f.created_at , f.file_name,json_build_object('id',u.id,'name',u.username,'avatar',u.avatar) as users from files as f inner join users as u on f.user_id = u.id  where u.id=$1", [id]);
-      // console.log(files.rows);
+class FileService {
+  async getUserFiles(userId, next) {
+    let files = await pool.query(
+      "select f.id, f.title , f.size, f.created_at , f.file_name,json_build_object('id',u.id,'name',u.username,'avatar',u.avatar) as users from files as f inner join users as u on f.user_id = u.id  where u.id=$1",
+      [userId]
+    );
+    // console.log(files.rows);
 
-      if (!files.rowCount) {
-        throw new BadRequestError("User Not found",400)
-      }
+    if (!files.rowCount) {
+      throw new BadRequestError("User Not found", 400);
+    }
 
-      return {
-        files: files.rows,
-      };
+    return {
+      files: files.rows,
+    };
+  }
+
+  async getUserById(req, next) {
+    const { id } = req.params;
+    let files = await pool.query(
+      "select f.title , f.size, f.created_at , f.file_name,json_build_object('id',u.id,'name',u.username,'avatar',u.avatar) as users from files as f inner join users as u on f.user_id = u.id  where u.id=$1",
+      [id]
+    );
+    // console.log(files.rows);
+
+    if (!files.rowCount) {
+      throw new BadRequestError("User Not found", 400);
+    }
+
+    return {
+      files: files.rows,
+    };
   }
 
   async getAllFiles(req) {
-  const { title } = req.query
+    const { title } = req.query;
 
-  let query = `
+    let query = `
     SELECT 
       files.id, 
       files.title, 
@@ -40,48 +59,56 @@ class FileService{
       ) AS users
     FROM files
     INNER JOIN users ON users.id = files.user_id
-  `
+  `;
 
-  let values = []
+    let values = [];
 
-  if (title) {
-    query += ` WHERE files.title ILIKE $1`
-    values.push(`%${title}%`)
+    if (title) {
+      query += ` WHERE files.title ILIKE $1`;
+      values.push(`%${title}%`);
+    }
+
+    const files = await pool.query(query, values);
+
+    return {
+      status: 200,
+      files: files.rows,
+    };
   }
 
-  const files = await pool.query(query, values)
+  async getFile(req) {
+    const { file_name } = req.params;
 
-  return {
-    status: 200,
-    files: files.rows
+    const existFile = [
+      ".mp4",
+      ".webm",
+      ".mpeg",
+      ".avi",
+      ".mkv",
+      ".m4v",
+      ".ogm",
+      ".mov",
+      ".mpg",
+    ];
+    const existFileAvatar = [".png", ".jpg", ".jpeg", ".svg"];
+
+    const ext = extname(file_name).toLowerCase();
+
+    let filePath;
+    if (existFile.includes(ext)) {
+      filePath = join(process.cwd(), "src", "uploads", "videos", file_name);
+    } else if (existFileAvatar.includes(ext)) {
+      filePath = join(process.cwd(), "src", "uploads", "pictures", file_name);
+    } else {
+      throw new NotFoundError("file name topilmadi", 404);
+    }
+
+    return { status: 200, filePath };
   }
-}
-
-
-
- async getFile(req) {
-  const { file_name } = req.params;
-
-  const existFile = [".mp4",".webm",".mpeg",".avi",".mkv",".m4v",".ogm",".mov",".mpg"];
-  const existFileAvatar = [".png",".jpg",".jpeg",".svg"];
-
-  const ext = extname(file_name).toLowerCase();
-
-  let filePath;
-  if (existFile.includes(ext)) {
-    filePath = join(process.cwd(), "src", "uploads", "videos", file_name);
-  } else if (existFileAvatar.includes(ext)) {
-    filePath = join(process.cwd(), "src", "uploads", "pictures", file_name);
-  } else {
-    throw new NotFoundError("file name topilmadi", 404);
-  }
-
-  return { status: 200, filePath };
-}
   async createFile(req, next) {
     try {
       const { title } = req.body;
-      const userId = req.user.id  
+      const userId = req.user.id;
       const { file } = req.files;
 
       const existFile = [
@@ -157,73 +184,61 @@ class FileService{
     };
   }
 
-  async deleteFile(req, next) {
-    const { id } = req.user;
-    const { fileId } = req.params;
+  async deleteFile({ userId, fileId }) {
+    // 1) fileId validatsiya
+    const id = Number(fileId);
+    if (!Number.isInteger(id) || id <= 0) {
+      throw new BadRequestError("fileId must be a valid number", 400);
+    }
 
+    // 2) Avval tekshiramiz (file shu usernikimi?)
     const existFile = await pool.query(
-      "select * from files where id=$1 and user_id=$2",
-      [fileId, id]
+      "select id, file_name from files where id=$1 and user_id=$2",
+      [id, userId]
     );
+
     if (!existFile.rowCount) {
       throw new NotFoundError("Not found file of this user", 404);
     }
 
-    await pool.query("delete from files where id=$1", [fileId]);
-    fs.unlinkSync(
-      join(
-        process.cwd(),
-        "src",
-        "uploads",
-        "videos",
-        existFile.rows[0].file_name
-      )
+    const file = existFile.rows[0];
+
+    // 3) DB dan o‘chiramiz
+    await pool.query("delete from files where id=$1 and user_id=$2", [
+      id,
+      userId,
+    ]);
+
+    // 4) Diskdan o‘chiramiz (agar bo‘lsa)
+    const filePath = join(
+      process.cwd(),
+      "src",
+      "uploads",
+      "videos",
+      file.file_name
     );
-    return {
-      status: 200,
-      message: "File successfuly deleted",
-    };
-  }
 
-  async download(req){
-    const { file_name } = req.params;
-
-    const existFile = [
-      ".mp4",
-      ".webm",
-      ".mpeg",
-      ".avi",
-      ".mkv",
-      ".m4v",
-      ".ogm",
-      ".mov",
-      ".mpg",
-    ];
-
-
-    let filePath;
-    if (existFile.includes(extname(file_name))) {
-      filePath = join(process.cwd(), "src", "uploads", "videos", file_name);
-    } else {
-      throw new NotFoundError("file name not found", 404);
+    try {
+      await fs.unlink(filePath);
+    } catch (err) {
+      // file diskda bo‘lmasligi mumkin — server yiqilmasin
     }
 
-    return {
-      status: 200,
-      filePath,
-    };
-    
+    // 5) O‘chirilgan file info qaytaramiz
+    return { deleted: file };
   }
 
-  async search(params){
-    const {data} = params
-     const JoinData = await pool.query("select f.title , f.size, f.created_at , f.file_name,json_build_object('id',u.id,'name',u.username,'avatar',u.avatar) as users from files as f inner join users as u on f.user_id = u.id where u.username ilike $1 or f.title ilike $2",[`%${data}%`,`%${data}%`])
-     if(JoinData.rows.length === 0){
-            throw new NotFoundError(404,`not found data about ${data}`)
-        }
+  async search(params) {
+    const { data } = params;
+    const JoinData = await pool.query(
+      "select f.title , f.size, f.created_at , f.file_name,json_build_object('id',u.id,'name',u.username,'avatar',u.avatar) as users from files as f inner join users as u on f.user_id = u.id where u.username ilike $1 or f.title ilike $2",
+      [`%${data}%`, `%${data}%`]
+    );
+    if (JoinData.rows.length === 0) {
+      throw new NotFoundError(404, `not found data about ${data}`);
+    }
 
-        return JoinData.rows 
-  
+    return JoinData.rows;
   }
 }
 
