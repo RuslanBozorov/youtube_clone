@@ -1,0 +1,36 @@
+2026-01-17 13:37:28 ERROR [GET : /api/files/all?] MESSAGE: неверный синтаксис для типа integer: "all"  META: {
+  "name": "error"
+}
+2026-01-17 13:45:37 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-17 13:45:42 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
+  "name": "NotFoundError"
+}
+2026-01-17 13:45:43 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
+  "name": "NotFoundError"
+}
+2026-01-17 13:45:44 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
+  "name": "NotFoundError"
+}
+2026-01-17 13:45:45 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
+  "name": "NotFoundError"
+}
+2026-01-17 13:45:45 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
+  "name": "NotFoundError"
+}
+2026-01-17 13:45:45 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
+  "name": "NotFoundError"
+}
+2026-01-17 13:45:45 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
+  "name": "NotFoundError"
+}
+2026-01-17 13:45:48 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-17 13:49:16 WARN [GET : /api/files/15] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-17 14:47:32 WARN [GET : /api/files/oneUser] MESSAGE: jwt expired  META: {
+  "name": "TokenExpiredError"
+}

@@ -1,19 +1,19 @@
 const navbarList = document.querySelector(".navbar-list");
 const iframesList = document.querySelector(".iframes-list");
 const inputSearch = document.querySelector("#inputSearch");
-const btn = document.querySelector(".search-btn");
+const form = document.querySelector(".search-box");
+const micBtn = document.querySelector(".micBtn")
 const userId = document.querySelector(".data-id");
-const avatar = window.localStorage.getItem("avatar");
-list.innerHTML += `
- <img class="avatar-img" src=http://localhost:4545/file/${
-   avatar ? avatar : "../public/img/avatar.jpg"
- }  alt="avatar-img" width="32px" height="32px">
-`;
+  const avatar = window.localStorage.getItem("avatar");
+  list.innerHTML += `
+  <img class="avatar-img" src="http://localhost:4545/file/${
+    avatar ? avatar : "avatar.jpg"
+  }"  alt="avatar-img" width="32px" height="32px">
+  `;
 const date = new Date();
 async function getUsers() {
   let users = await axios.get("http://localhost:4545/api/users");
   users = users.data.data;
-
   users.forEach((u) => {
     // console.log(u);
 
@@ -26,6 +26,7 @@ async function getUsers() {
   });
 }
 let search = "";
+// search = inputSearch.value
 function voice() {
   const recognition = new SpeechRecognition();
   recognition.start();
@@ -34,18 +35,22 @@ function voice() {
   recognition.onresult = (e) => {
     search = e.results[0][0].transcript;
     inputSearch.value = search;
-    iframesList.innerHTML = "";
     getAllFiles();
   };
 }
 
+
 inputSearch.onkeydown = (e) => {
   if (e.keyCode === 13) {
+    e.preventDefault()
+    iframesList.innerHTML = ""
     search = inputSearch.value;
-    iframesList.innerHTML = "";
     getAllFiles();
   }
 };
+
+
+
 
 async function getAllFiles() {
   try {
@@ -162,7 +167,7 @@ async function getUserId(id) {
   });
 }
 
-btn.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   getAllFiles();
 });
@@ -171,13 +176,17 @@ navbarList.addEventListener("click", (e) => {
   const home = e.target.closest(".home");
   if (home) {
     getAllFiles();
-    return;
   }
   const channel = e.target.closest(".channel");
   if (!channel) return;
   const id = channel.dataset.id;
   if (id) getUserId(id);
 });
+
+
+micBtn.addEventListener("click",()=>{
+  voice()
+})
 
 function clear() {
   iframesList.innerHTML = "";

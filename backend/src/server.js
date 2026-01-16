@@ -6,14 +6,15 @@ import nodemailer from 'nodemailer'
 import fs from "fs";
 import { join } from "path";
 import cors from "cors";
+import { errorMiddleware } from "./middleware/errorMiddleware.js";
 
 config();
 
 const app = express();
+app.use(express.json());
 app.use(cors());
 app.use("/file", express.static(join(process.cwd(), "src", "uploads")));
 app.use(fileUpload());
-app.use(express.json());
 app.use(indexRouter.userRouter);
 app.use(indexRouter.fileRouter);
 
@@ -30,40 +31,33 @@ app.post("/send",async(req,res)=>{
   const {email} = req.body
   const otp = Math.round(Math.random()*1000000)
  await transporter.sendMail({
-    from:"'Google' <frontendruslan@gmail.com>",
+    from:"'Youtube' <frontendruslan@gmail.com>",
     to:email,
     subject:"Tasdiqlash kodi",
     html:`<p>Bu kodni hech kimga bermang</p> <h2>${otp}</h2> <input type="text"> <button>junat</button> `
   })
 
-  return res.status(200).send("Tasdiqlash kodi yuborildi")
+ let otps = fs.readFileSync(join(process.cwd(),"src","database","otp.json"),"utf-8")
+
+ otps = JSON.parse(otps) || []
+
+ let newOtp = {
+  otp,
+  email,
+  expire:new Date().getTime() + 120000 * 5
+ }
+ otps.push(newOtp)
+ fs.writeFileSync(join(process.cwd(),'src','database','otp.json'),JSON.stringify(otps,null,4))
+ 
+  return res.status(200).json({
+    status:200,
+    message:"Kod yuborildi"
+  })
 })
 
-app.use((error, req, res, next) => {
-  // console.log(error.status);
 
-  if (error.status && error.status < 500) {
-    return res.status(error.status).json({
-      status: error.status,
-      message: error.message,
-      name: error.name,
-    });
-  } else {
-    let errorText = `\n\n[${new Date()}--${req.method}--${req.url}--${
-      error.message
-    }] ${error.stack}`;
 
-    fs.appendFileSync(
-      join(process.cwd(), "src", "logs", "logger.txt"),
-      errorText
-    );
+ 
+app.use(errorMiddleware)
 
-    res.status(500).json({
-      status: 500,
-      message: "Internal Server Error",
-      name: error.name,
-    });
-  }
-});
-
-app.listen(process.env.PORT, () => console.log("Server is Running"));
+app.listen(process.env.PORT,"::", () => console.log("Server is Running"));

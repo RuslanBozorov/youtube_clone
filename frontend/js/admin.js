@@ -6,7 +6,7 @@ function logoutBtn() {
 const token = window.localStorage.getItem("accessToken");
 if (!token) {
   alert("Video qo'sholmisan");
-  window.location = "/login";
+  window.location = "./login";
 }
 
 async function createFile(e) {
@@ -30,6 +30,7 @@ async function createFile(e) {
     if (newFile.data.status == 201) {
       alert("video qo'shildi");
     }
+    getAllFiles()
   } catch (error) {
     console.log(error);
   }

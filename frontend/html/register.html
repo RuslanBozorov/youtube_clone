@@ -30,11 +30,11 @@
                 </label>
                 <label>
                     <span class="zmdi zmdi-account"></span>
-                    <input type="email" id="usernameInput" placeholder="Your email" required>
+                    <input type="email" id="emailInput" placeholder="Your email" required>
                 </label>
                 <label>
-                    <span class="zmdi zmdi-account"></span>
-                    <input type="number" id="usernameInput" placeholder="OTP CODE" required>
+                   <span class="zmdi zmdi-lock"></span>
+                    <input type="password" id="otpInput" placeholder="OTP CODE" required>
                 </label>
                 <label>
                     <span class="zmdi zmdi-lock"></span>
@@ -51,6 +51,40 @@
             <div style="margin-top: 20px">
             <a style="margin-right: 25px;" href="/" class="sign-link">home</a>
             <a href="/login" class="sign-link">I am already member</a>
+
+             <button id="openOtpModal">Email bilan OTP</button>
+             <div class="modal-backdrop" id="otpBackdrop"></div>
+
+  <!-- Modal -->
+  <div class="modal" id="otpModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>Email tasdiqlash</h2>
+        <button class="modal-close" id="closeOtpModal">×</button>
+      </div>
+
+      <p class="modal-desc">
+        Emailingizni kiriting, OTP kod yuboramiz.
+      </p>
+
+      <form id="otpEmailForm" class="modal-form">
+        <label for="otpEmail" class="modal-label">Email</label>
+        <input
+          type="email"
+          id="otpEmail"
+          class="modal-input"
+          placeholder="example@gmail.com"
+          required
+        />
+
+        <button type="submit" class="modal-btn">
+          Jo‘natish
+        </button>
+
+        <p class="modal-msg" id="otpMsg"></p>
+      </form>
+    </div>
+  </div>
         </div>
             <img src="img/signup-image.jpg" alt="signup-image" class="signup-image">
         </div>

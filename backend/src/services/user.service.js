@@ -6,23 +6,30 @@ import {
   InternalServerError,
   NotFoundError,
 } from "../utils/errors.js";
-import nodemailer from 'nodemailer'
 import { join, extname } from "path";
 import Jwt from "jsonwebtoken";
+import fs from 'fs'
 
 class UserService {
   async register(body, files, next) {
-    try {
-      const { username, password,email,otp } = body;
+      const { username, password,email,otp} = body;
       const { file } = files;
-      const transporter = nodemailer.createTransport({
-        service:"gmail",
-        auth:{
-          user:"frontendruslan@gmail.com",
-          pass:"fymb etmw gxnm pspw"
-        }
+      // console.log(body);
       
-      })
+
+      let otps = fs.readFileSync(join(process.cwd(),"src","database","otp.json"),"utf-8")
+
+      otps = JSON.parse(otps)
+
+    const existOtp = otps.find(item => item.otp == otp && item.email == email)
+    
+    if(!existOtp){
+      throw new   BadRequestError("email or otp wrong",400)
+    }
+
+    if(existOtp.expire < Date.now()){
+      throw new BadRequestError("OTP muddati tugadi",400)
+    }
 
       const fileName = new Date().getTime() + extname(file.name);
 
@@ -42,8 +49,8 @@ class UserService {
       }
 
       const newUser = await pool.query(
-        "insert into users(username,password,avatar) values($1,$2,$3) RETURNING *",
-        [username, await hashPassword(password), fileName]
+        "insert into users(username,password,avatar,email) values($1,$2,$3,$4) RETURNING *",
+        [username, await hashPassword(password),fileName,email]
       );
 
       file.mv(
@@ -62,7 +69,7 @@ class UserService {
         accessToken: Jwt.sign(
           { id: newUser.rows[0].id, username: newUser.rows[0].username },
           process.env.JWT_PASSWORD,
-          { expiresIn: "30m" }
+          { expiresIn: "50s" }
         ),
         refreshToken: Jwt.sign(
           { id: newUser.rows[0].id, username: newUser.rows[0].username },
@@ -70,9 +77,6 @@ class UserService {
           { expiresIn: "1d" }
         ),
       };
-    } catch (error) {
-      next(error);
-    }
   }
 
   async login(body, next) {
