@@ -11,12 +11,7 @@ router
 
   .get("/file/:file_name", fileController.getFile)
   .get("/api/file/download/:file_name", fileController.download)
-  .post(
-    "/api/files",
-    checkToken,
-    validation.createFile,
-    fileController.createFile
-  )
+  .post("/api/files",checkToken,validation.createFile,fileController.createFile)
   .put(
     "/api/files/:fileId",
     checkToken,

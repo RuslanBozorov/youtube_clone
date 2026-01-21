@@ -1,13 +1,9 @@
-function logoutBtn() {
-  window.localStorage.clear();
-  window.location = "/login";
-}
-
-const token = window.localStorage.getItem("accessToken");
+let token = window.localStorage.getItem("accessToken");
 if (!token) {
   alert("Video qo'sholmisan");
-  window.location = "./login";
+  window.location = "/login";
 }
+const logoutBtn = document.querySelector("#logoutBtn")
 
 async function createFile(e) {
   try {

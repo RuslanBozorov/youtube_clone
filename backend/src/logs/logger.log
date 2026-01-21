@@ -1,36 +1,2604 @@
-2026-01-17 13:37:28 ERROR [GET : /api/files/all?] MESSAGE: неверный синтаксис для типа integer: "all"  META: {
+2026-01-21 18:58:06 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.6"  META: {
   "name": "error"
 }
-2026-01-17 13:45:37 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+2026-01-21 18:59:39 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.6"  META: {
+  "name": "error"
+}
+2026-01-21 19:00:25 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.6"  META: {
+  "name": "error"
+}
+2026-01-21 19:01:26 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.6"  META: {
+  "name": "error"
+}
+2026-01-21 19:08:43 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
   "name": "BadRequestError"
 }
-2026-01-17 13:45:42 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
-  "name": "NotFoundError"
-}
-2026-01-17 13:45:43 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
-  "name": "NotFoundError"
-}
-2026-01-17 13:45:44 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
-  "name": "NotFoundError"
-}
-2026-01-17 13:45:45 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
-  "name": "NotFoundError"
-}
-2026-01-17 13:45:45 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
-  "name": "NotFoundError"
-}
-2026-01-17 13:45:45 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
-  "name": "NotFoundError"
-}
-2026-01-17 13:45:45 WARN [DELETE : /api/files/30] MESSAGE: Not found file of this user  META: {
-  "name": "NotFoundError"
-}
-2026-01-17 13:45:48 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+2026-01-21 19:08:58 WARN [GET : /api/files/8] MESSAGE: User Not found  META: {
   "name": "BadRequestError"
 }
-2026-01-17 13:49:16 WARN [GET : /api/files/15] MESSAGE: User Not found  META: {
+2026-01-21 19:08:59 WARN [GET : /api/files/5] MESSAGE: User Not found  META: {
   "name": "BadRequestError"
 }
-2026-01-17 14:47:32 WARN [GET : /api/files/oneUser] MESSAGE: jwt expired  META: {
+2026-01-21 19:09:29 WARN [GET : /api/files/1] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:09:30 WARN [GET : /api/files/5] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:09:32 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:09:33 WARN [GET : /api/files/8] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:09:34 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:09:35 WARN [GET : /api/files/5] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:10:58 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:10:59 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:11:01 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:11:01 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:11:04 WARN [GET : /api/files/8] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:12:31 WARN [GET : /api/files/5] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:16:37 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.6"  META: {
+  "name": "error"
+}
+2026-01-21 19:16:50 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.6"  META: {
+  "name": "error"
+}
+2026-01-21 19:24:46 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:25:04 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "2.44"  META: {
+  "name": "error"
+}
+2026-01-21 19:25:25 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:25:33 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.64"  META: {
+  "name": "error"
+}
+2026-01-21 19:38:55 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:39:13 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.64"  META: {
+  "name": "error"
+}
+2026-01-21 19:40:10 WARN [POST : /api/files] MESSAGE: User not found  META: {
+  "name": "NotFoundError"
+}
+2026-01-21 19:40:13 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:40:22 WARN [POST : /api/files] MESSAGE: User not found  META: {
+  "name": "NotFoundError"
+}
+2026-01-21 19:42:29 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:43:12 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.64"  META: {
+  "name": "error"
+}
+2026-01-21 19:46:48 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.64"  META: {
+  "name": "error"
+}
+2026-01-21 19:49:45 ERROR [POST : /api/files] MESSAGE: неверный синтаксис для типа integer: "1.64"  META: {
+  "name": "error"
+}
+2026-01-21 19:51:49 WARN [GET : /api/files/17] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:52:10 WARN [GET : /api/files/17] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 19:55:55 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:55:55 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 3336,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 68857856,
+      "heapTotal": 22499328,
+      "heapUsed": 20565256,
+      "external": 3838076,
+      "arrayBuffers": 100883
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 104805.812
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 19:57:21 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:57:21 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 2852,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76558336,
+      "heapTotal": 37179392,
+      "heapUsed": 18687528,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 104892
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 19:57:23 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:57:23 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 2680,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76546048,
+      "heapTotal": 37441536,
+      "heapUsed": 18661488,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 104894
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 19:58:19 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:58:19 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 2164,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76234752,
+      "heapTotal": 37179392,
+      "heapUsed": 18613032,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 104949.984
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 19:58:21 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:58:21 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 15472,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76562432,
+      "heapTotal": 37179392,
+      "heapUsed": 18653432,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 104952
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 19:58:23 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:58:23 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 16244,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76242944,
+      "heapTotal": 37441536,
+      "heapUsed": 18627808,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 104954
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 19:58:53 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:58:53 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 11896,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76529664,
+      "heapTotal": 37703680,
+      "heapUsed": 18474976,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 104984.031
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 19:59:08 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:59:08 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 3584,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 75997184,
+      "heapTotal": 37179392,
+      "heapUsed": 18512040,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 104998.984
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 19:59:15 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:59:15 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 1212,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76464128,
+      "heapTotal": 37441536,
+      "heapUsed": 18650496,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 105006
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 19:59:21 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 19:59:21 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 1460,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76226560,
+      "heapTotal": 37703680,
+      "heapUsed": 18680712,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 105012
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 20:00:17 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 20:00:17 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 2700,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76312576,
+      "heapTotal": 37179392,
+      "heapUsed": 18661688,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 105068
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 20:02:47 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 20:02:47 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 2412,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76283904,
+      "heapTotal": 37179392,
+      "heapUsed": 18681816,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 105218
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 20:02:51 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:TokenExpiredError: jwt expired
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "TokenExpiredError",
+    "message": "jwt expired",
+    "expiredAt": "2026-01-21T14:55:33.000Z"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 20:02:51 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 14524,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76808192,
+      "heapTotal": 37441536,
+      "heapUsed": 18606952,
+      "external": 3810777,
+      "arrayBuffers": 73936
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 105222
+  },
+  "trace": [
+    {
+      "column": 21,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": null,
+      "line": 190,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "getSecret",
+      "line": 97,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 101,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 20:22:07 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:22:13 WARN [GET : /api/files/17] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:22:14 WARN [GET : /api/files/8] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:22:15 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:22:16 WARN [GET : /api/files/5] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:22:17 WARN [GET : /api/files/1] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:22:38 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:22:42 WARN [GET : /api/files/19] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:23:01 WARN [GET : /api/files/17] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:27:43 WARN [GET : /api/files/oneUser] MESSAGE: user not found  META: {
+  "name": "NotFoundError"
+}
+2026-01-21 20:27:47 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt must be provided
+JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:60:17)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:60:17)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "JsonWebTokenError",
+    "message": "jwt must be provided"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 20:27:47 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 1164,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 69705728,
+      "heapTotal": 22761472,
+      "heapUsed": 20600832,
+      "external": 3836721,
+      "arrayBuffers": 99624
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 106718.109
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 60,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 20:28:00 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt must be provided
+JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:60:17)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:60:17)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "JsonWebTokenError",
+    "message": "jwt must be provided"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 20:28:00 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 8344,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76386304,
+      "heapTotal": 37703680,
+      "heapUsed": 18686896,
+      "external": 3810592,
+      "arrayBuffers": 73751
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 106730.765
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 60,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 20:29:02 ERROR [undefined : undefined] MESSAGE: uncaughtException: jwt must be provided
+JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:60:17)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) STACK:JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\jsonwebtoken\verify.js:60:17)
+    at Namespace.<anonymous> (file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js:35:20)
+    at Namespace.emit (node:events:518:28)
+    at Namespace.emitReserved (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:279:14)
+    at C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\node_modules\socket.io\dist\namespace.js:241:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) META: {
+  "error": {
+    "name": "JsonWebTokenError",
+    "message": "jwt must be provided"
+  },
+  "exception": true,
+  "date": "Wed Jan 21 2026 20:29:02 GMT+0500 (Узбекистан, стандартное время)",
+  "process": {
+    "pid": 4788,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v22.16.0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\src\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 76349440,
+      "heapTotal": 37441536,
+      "heapUsed": 18722648,
+      "external": 3810592,
+      "arrayBuffers": 73751
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 106793
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\jsonwebtoken\\verify.js",
+      "function": "module.exports [as verify]",
+      "line": 60,
+      "method": "exports [as verify]",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "file:///C:/Users/admin/Desktop/Fullstack/3-oy/uy-ishi/loyha_youtube/backend/src/server.js",
+      "function": null,
+      "line": 35,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "node:events",
+      "function": "Namespace.emit",
+      "line": 518,
+      "method": "emit",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\typed-events.js",
+      "function": "Namespace.emitReserved",
+      "line": 56,
+      "method": "emitReserved",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": "Namespace._doConnect",
+      "line": 279,
+      "method": "_doConnect",
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\admin\\Desktop\\Fullstack\\3-oy\\uy-ishi\\loyha_youtube\\backend\\node_modules\\socket.io\\dist\\namespace.js",
+      "function": null,
+      "line": 241,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 11,
+      "file": "node:internal/process/task_queues",
+      "function": "process.processTicksAndRejections",
+      "line": 85,
+      "method": "processTicksAndRejections",
+      "native": false
+    }
+  ]
+}
+2026-01-21 20:42:45 WARN [GET : /api/files/oneUser] MESSAGE: user not found  META: {
+  "name": "NotFoundError"
+}
+2026-01-21 20:46:07 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:47:05 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:51:42 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:51:51 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:51:57 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:52:58 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 20:53:07 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:10:54 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:10:55 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:11:33 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:23:03 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:25:56 ERROR [POST : /api/message/undefined] MESSAGE: неверный синтаксис для типа integer: "undefined"  META: {
+  "name": "error"
+}
+2026-01-21 21:27:29 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:28:25 ERROR [POST : /api/message/undefined] MESSAGE: неверный синтаксис для типа integer: "undefined"  META: {
+  "name": "error"
+}
+2026-01-21 21:28:43 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:35:06 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:35:10 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:37:12 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:37:14 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:37:54 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:37:55 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:39:33 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:39:34 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:41:01 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:41:03 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:50:24 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:52:07 WARN [GET : /api/message/23] MESSAGE: jwt expired  META: {
   "name": "TokenExpiredError"
+}
+2026-01-21 21:52:07 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:52:21 WARN [GET : /api/message/23] MESSAGE: jwt expired  META: {
+  "name": "TokenExpiredError"
+}
+2026-01-21 21:52:21 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:52:22 WARN [GET : /api/message/22] MESSAGE: jwt expired  META: {
+  "name": "TokenExpiredError"
+}
+2026-01-21 21:52:22 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 21:52:24 WARN [GET : /api/message/23] MESSAGE: jwt expired  META: {
+  "name": "TokenExpiredError"
+}
+2026-01-21 21:52:24 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:11:14 WARN [GET : /api/files/oneUser] MESSAGE: jwt expired  META: {
+  "name": "TokenExpiredError"
+}
+2026-01-21 22:11:27 WARN [POST : /api/login] MESSAGE: "password" with value "qwe" fails to match the required pattern: /^[a-zA-Z0-9]{6,20}$/  META: {
+  "name": "NotFoundError"
+}
+2026-01-21 22:11:40 WARN [POST : /api/login] MESSAGE: username or password wrong  META: {
+  "name": "NotFoundError"
+}
+2026-01-21 22:11:48 WARN [GET : /api/files/oneUser] MESSAGE: jwt expired  META: {
+  "name": "TokenExpiredError"
+}
+2026-01-21 22:12:07 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:12:15 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 22:16:13 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:16:19 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 22:16:45 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:16:51 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 22:16:57 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:17:55 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:18:00 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 22:18:59 ERROR [POST : /api/message/undefined] MESSAGE: неверный синтаксис для типа integer: "undefined"  META: {
+  "name": "error"
+}
+2026-01-21 22:19:27 ERROR [POST : /api/message/undefined] MESSAGE: неверный синтаксис для типа integer: "undefined"  META: {
+  "name": "error"
+}
+2026-01-21 22:20:22 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:20:37 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:22:09 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:22:16 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:28:41 ERROR [POST : /api/message/undefined] MESSAGE: неверный синтаксис для типа integer: "undefined"  META: {
+  "name": "error"
+}
+2026-01-21 22:28:45 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:28:52 WARN [GET : /file/1769016532862.jpg] MESSAGE: ENOENT: no such file or directory, stat 'C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\src\uploads\pictures\1769016532862.jpg'  META: {
+  "name": "Error"
+}
+2026-01-21 22:28:56 WARN [GET : /file/1769016532862.jpg] MESSAGE: ENOENT: no such file or directory, stat 'C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\src\uploads\pictures\1769016532862.jpg'  META: {
+  "name": "Error"
+}
+2026-01-21 22:28:56 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:29:48 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:29:50 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:29:57 WARN [GET : /file/1769016597064.jpg] MESSAGE: ENOENT: no such file or directory, stat 'C:\Users\admin\Desktop\Fullstack\3-oy\uy-ishi\loyha_youtube\backend\src\uploads\pictures\1769016597064.jpg'  META: {
+  "name": "Error"
+}
+2026-01-21 22:41:20 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:41:42 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:42:28 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:42:29 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:42:40 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:44:30 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:45:39 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:45:41 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:45:41 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:45:54 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:45:54 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:47:25 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:48:43 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:50:49 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:52:24 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:52:47 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:53:02 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:53:08 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 22:53:32 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:53:36 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:53:54 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:53:56 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:54:04 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 22:54:11 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:54:48 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:54:51 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 22:57:07 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 22:57:10 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:00:27 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:00:31 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:00:35 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:00:35 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:00:36 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:00:36 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:00:41 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:00:42 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:03:04 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:03:09 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:03:14 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:03:14 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:03:15 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:03:15 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:07:03 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:07:09 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:07:18 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:07:41 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:09:23 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:09:26 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:09:27 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:09:27 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:09:28 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:09:28 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:09:28 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:09:56 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:10:00 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:10:01 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:10:01 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:10:01 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:10:02 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:10:05 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:10:47 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:11:02 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:11:36 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:11:39 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:11:40 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:11:40 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:11:40 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:11:40 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:11:41 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:11:41 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:11:41 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:11:41 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:14:21 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:14:27 ERROR [POST : /api/message/22] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:14:44 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:14:49 ERROR [POST : /api/message/23] MESSAGE: значение NULL в столбце "message" отношения "message" нарушает ограничение NOT NULL  META: {
+  "name": "error"
+}
+2026-01-21 23:16:41 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:16:50 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:17:27 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:17:36 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:17:43 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:17:50 WARN [GET : /api/files/oneUser] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:17:55 WARN [POST : /api/login] MESSAGE: "password" with value "12345" fails to match the required pattern: /^[a-zA-Z0-9]{6,20}$/  META: {
+  "name": "NotFoundError"
+}
+2026-01-21 23:18:06 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:18:18 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:27:51 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:28:05 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:29:11 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:29:34 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:30:50 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:31:19 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:32:10 WARN [GET : /api/files/22] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
+}
+2026-01-21 23:32:24 WARN [GET : /api/files/23] MESSAGE: User Not found  META: {
+  "name": "BadRequestError"
 }

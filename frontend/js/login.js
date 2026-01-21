@@ -1,4 +1,11 @@
+const token = window.localStorage.getItem("accessToken")
 
+const socket = io("http://localhost:4545",{
+    auth:{
+        headers:token
+    },
+    transport:["websocket"]
+})
 
 async function login(){
     const res = await axios.post("http://localhost:4545/api/login",{

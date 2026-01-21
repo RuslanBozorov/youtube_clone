@@ -78,7 +78,7 @@ class FileService {
 
   async getFile(req) {
     const { file_name } = req.params;
-
+    const {media} = req.query
     const existFile = [
       ".mp4",
       ".webm",
@@ -95,7 +95,10 @@ class FileService {
     const ext = extname(file_name).toLowerCase();
 
     let filePath;
-    if (existFile.includes(ext)) {
+    if(media){
+      filePath = join(process.cwd(), "src", "uploads", "media", file_name);
+    }
+   else if (existFile.includes(ext)) {
       filePath = join(process.cwd(), "src", "uploads", "videos", file_name);
     } else if (existFileAvatar.includes(ext)) {
       filePath = join(process.cwd(), "src", "uploads", "pictures", file_name);
@@ -137,16 +140,14 @@ class FileService {
         throw new NotFoundError("User not found", 404);
       }
 
-      await file.mv(
-        join(process.cwd(), "src", "uploads", "videos", fileName),
-        (err) => {
-          if (err) {
-            throw new InternalServerError(err, 500);
-          }
-        }
-      );
+      await new Promise((resolve, reject) => {
+      file.mv(join(process.cwd(), "src", "uploads", "videos", fileName), (err) => {
+        if (err) return reject(err);
+        resolve();
+      });
+    });
 
-      file.size = +(file.size / 1024 / 1024).toFixed(2);
+      file.size = Math.ceil(file.size / 1024 / 1024);
 
       await pool.query(
         "insert into files(title,file_name,size,user_id) values($1,$2,$3,$4)",

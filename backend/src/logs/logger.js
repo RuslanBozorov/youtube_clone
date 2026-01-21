@@ -20,7 +20,7 @@ const customFormat = format.combine(
             ${timestamp} ${level.toUpperCase()} [${method || meta.method} : ${url || meta.url}] MESSAGE: ${message} ${stack ? `STACK:${stack}` : ""} META: ${Object.keys(meta).length ? JSON.stringify(meta,null,2) : "-"} `.trim()
     })
 );
-
+ 
 
 export const Logger = createLogger({
     level:'info',

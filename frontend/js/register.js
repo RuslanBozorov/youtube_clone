@@ -1,20 +1,23 @@
+const socket = io("http://localhost:4545", {
+ auth:{
+  headers:token
+ },
+  transports:["websocket"]
+})
 const modal = document.getElementById("otpModal");
 const backdrop = document.getElementById("otpBackdrop");
 const form = document.getElementById("otpEmailForm");
 const otpEmailInput = document.getElementById("otpEmail");
 const submitButton = document.getElementById("submitButton");
 
-// register inputlari (id larni HTML ga mosla)
 const usernameInput = document.getElementById("usernameInput");
 const emailInput = document.getElementById("emailInput");
 const otpInput = document.getElementById("otpInput")
 const passwordInput = document.getElementById("passwordInput");
 const uploadInput = document.getElementById("uploadInput");
 
-// msg (HTML dagi p id)
 const msg = document.getElementById("otpMsg");
 
-// ✅ Modal open/close - register tashqarisida
 document.getElementById("openOtpModal").onclick = () => {
   modal.classList.add("open");
   backdrop.classList.add("open");

@@ -106,42 +106,27 @@
                  <!-- Chat messages -->
     <div class="chat-body">
 
-        <div class="message other">
-            Assalomu alaykum 👋
-        </div>
-
-        <div class="message me">
-            Va alaykum salom
-        </div>
-
-        <div class="message other">
-            Video juda zo‘r chiqibdi 🔥
-        </div>
-
-        <div class="message me">
-            Rahmat, yana yuklayman
-        </div>
-
-        <div class="message other">
-            Qachon yangi dars chiqadi?
-        </div>
+       
+        
 
     </div>
  
                 <div class="chat-footer"> 
                     <label class="file-btn"> 
                         📹 
-                        <input type="file" hidden> 
+                        <input id="mediaInput" type="file" hidden> 
                     </label> 
  
                     <input type="text" id="chatInput" placeholder="Type a message..."> 
  
-                    <button id="sendBtn">➤</button> 
+                    <button onclick="sendMessage()" id="sendBtn">➤</button> 
                 </div> 
             </div>
         </main>
     </div>
     <!-- <script src="/js/request.js"></script> -->
+     
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script src="../js/index.js"></script>

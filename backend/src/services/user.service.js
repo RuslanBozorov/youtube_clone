@@ -13,7 +13,9 @@ import fs from 'fs'
 class UserService {
   async register(body, files, next) {
       const { username, password,email,otp} = body;
+      const socketId = process.socketId
       const { file } = files;
+      console.log(username,email,otp,socketId);
       // console.log(body);
       
 
@@ -32,8 +34,9 @@ class UserService {
     }
 
       const fileName = new Date().getTime() + extname(file.name);
-
-      const existFile = [".png", ".jpg", "jpeg", ".svg"];
+      console.log(fileName);
+      
+      const existFile = [".png", ".jpg", ".jpeg", ".svg"];
 
       if (!existFile.includes(extname(file.name))) {
         throw new BadRequestError("file mos kelmadi", 400);
@@ -49,8 +52,8 @@ class UserService {
       }
 
       const newUser = await pool.query(
-        "insert into users(username,password,avatar,email) values($1,$2,$3,$4) RETURNING *",
-        [username, await hashPassword(password),fileName,email]
+        "insert into users(username,email,password,avatar,socket_id) values($1,$2,$3,$4,$5) RETURNING *",
+        [username,email, await hashPassword(password),fileName,socketId]
       );
 
       file.mv(
@@ -61,7 +64,6 @@ class UserService {
           }
         }
       );
-
       return {
         status: 201,
         message: "User success created",
@@ -69,7 +71,7 @@ class UserService {
         accessToken: Jwt.sign(
           { id: newUser.rows[0].id, username: newUser.rows[0].username },
           process.env.JWT_PASSWORD,
-          { expiresIn: "50s" }
+          { expiresIn: "1h" }
         ),
         refreshToken: Jwt.sign(
           { id: newUser.rows[0].id, username: newUser.rows[0].username },
@@ -103,7 +105,7 @@ class UserService {
         accessToken: Jwt.sign(
           { id: existUser.rows[0].id, username: existUser.rows[0].username },
           process.env.JWT_PASSWORD,
-          { expiresIn: "10m" }
+          { expiresIn: "1h" }
         ),
         refreshToken: Jwt.sign(
           { id: existUser.rows[0].id, username: existUser.rows[0].username },

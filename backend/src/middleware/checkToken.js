@@ -4,7 +4,7 @@ import JWT from 'jsonwebtoken'
 export default async(req,res,next)=>{
   try {
      let {authorization } = req.headers;
-     let token = authorization .split(" ")[1]
+     let token = authorization.split(" ")[1]
     //  console.log(token);
      
     if(!token){

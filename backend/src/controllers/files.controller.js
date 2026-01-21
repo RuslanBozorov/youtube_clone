@@ -8,6 +8,8 @@ class FileController {
         return res.status(data.status).json(data);
       }
     } catch (error) {
+      console.log(error);
+      
       next(error);
     }
   }
